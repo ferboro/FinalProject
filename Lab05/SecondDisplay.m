@@ -115,6 +115,7 @@
         destination.destinationTitle        = self.stTitleSelected;
         destination.destinationDescription  = self.stDescriptionSelected;
         destination.destinationPhoto        = self.stPhotoSelected;
+        //tried commit
         
     }
 }
