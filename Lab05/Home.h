@@ -14,6 +14,8 @@
 
 @interface Home : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *btnSearch;
+- (IBAction)btnSearchPressed:(id)sender;
 
 @end
 
