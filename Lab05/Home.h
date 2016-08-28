@@ -16,9 +16,19 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *btnSearch;
 - (IBAction)btnSearchPressed:(id)sender;
-@property (strong, nonatomic) IBOutlet UISwitch *bsedan;
+
 - (IBAction)btnSedanPressed:(id)sender;
-@property (strong, nonatomic) IBOutlet UISwitch *btnCoupePressed;
+- (IBAction)btnCoupePressed:(id)sender;
+- (IBAction)btnCamionetaPressed:(id)sender;
+- (IBAction)btnPickupPressed:(id)sender;
+@property (strong, nonatomic) IBOutlet UISwitch *btnSedan;
+@property (strong, nonatomic) IBOutlet UISwitch *btnCoupe;
+@property (strong, nonatomic) IBOutlet UISwitch *btnCamioneta;
+@property (strong, nonatomic) IBOutlet UISwitch *btnPickup;
 
 @end
 
+#define     sedan           1
+#define     coupe           2
+#define     camioneta       3
+#define     pickup          4

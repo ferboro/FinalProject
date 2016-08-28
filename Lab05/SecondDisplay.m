@@ -7,6 +7,7 @@
 //
 
 #import "SecondDisplay.h"
+#import "Home.h"
 
 @interface SecondDisplay ()
 
@@ -17,6 +18,9 @@
 @property NSString *stTitleSelected;
 @property NSString *stDescriptionSelected;
 @property NSString *stPhotoSelected;
+
+
+//@property NSUInteger tipo_de_auto;
 @end
 
 @implementation SecondDisplay
@@ -34,7 +38,12 @@
 }
 //-------------------------------------------------------------------------------
 - (void)initController {
+    if (_tipo_de_auto == sedan)
+    {
+        self.com_test.text = @"sedan";
+    }
     //self.lblDestinationTitle.text          = self.destinationTitle;
+    /*
     if([self.destinationTitle  isEqual: @"Jalisco"])
     {
         self.destinationTitles  = [[NSMutableArray alloc] initWithObjects: @"Chapala", @"Mazamitla", @"Tapalpa", @"Puerto Vallarta", @"Tequila", nil];
@@ -66,7 +75,7 @@
         self.destinationPhotos          = [[NSMutableArray alloc] initWithObjects: @"cajeme.png", @"guaymas.png", @"hermosillo.png", @"navojoa.png", @"puertopenasco.png", nil];
         self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Ven y disfruta de Ciudad Obregon", @"Ven y disfruta de Guaymas", @"Ven y disfruta de Hermosillo", @"Ven y disfruta de Navojoa", @"Ven y disfruta de Puerto Pensaco", nil];
     
-    }
+    }*/
 }
 /**********************************************************************************************/
 #pragma mark - Table source and delegate methods

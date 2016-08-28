@@ -16,4 +16,8 @@
 @property NSString *destinationPhoto;
 
 
+@property NSUInteger tipo_de_auto;
+@property (strong, nonatomic) IBOutlet UILabel *com_test;
+
+
 @end

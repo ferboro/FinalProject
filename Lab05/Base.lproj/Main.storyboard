@@ -24,17 +24,19 @@
                                     <action selector="btnSearchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U3H-9O-Nco"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="nqz-xI-ehj" userLabel="SW_Tipo1">
-                                <rect key="frame" x="91" y="167" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="FKw-Cr-dyz" userLabel="SW_Tipo2">
                                 <rect key="frame" x="236" y="128" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <connections>
+                                    <action selector="btnCamionetaPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="H7n-Ca-QbP"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="apl-QX-wac" userLabel="SW_Tipo3">
                                 <rect key="frame" x="236" y="167" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <connections>
+                                    <action selector="btnPickupPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="0S5-Hi-7v2"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="kgi-bL-xtS" userLabel="SW_Tipo4">
                                 <rect key="frame" x="91" y="128" width="51" height="31"/>
@@ -267,6 +269,13 @@
                                 <rect key="frame" x="265" y="385" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="nqz-xI-ehj" userLabel="SW_Tipo1">
+                                <rect key="frame" x="91" y="167" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <connections>
+                                    <action selector="btnCoupePressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="msY-Ih-Ks2"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -274,9 +283,11 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
-                        <outlet property="bsedan" destination="kgi-bL-xtS" id="V2a-FG-8lm"/>
-                        <outlet property="btnCoupePressed" destination="nqz-xI-ehj" id="6lf-xw-bnA"/>
+                        <outlet property="btnCamioneta" destination="FKw-Cr-dyz" id="Rrg-lF-A6B"/>
+                        <outlet property="btnCoupe" destination="nqz-xI-ehj" id="AQ5-kJ-T37"/>
+                        <outlet property="btnPickup" destination="apl-QX-wac" id="WqO-G8-BIi"/>
                         <outlet property="btnSearch" destination="pjW-qM-0pK" id="Qkk-Qh-9fL"/>
+                        <outlet property="btnSedan" destination="kgi-bL-xtS" id="hR5-0O-5W2"/>
                         <segue destination="ZMd-oS-gI1" kind="push" identifier="SecondDisplay" id="nM4-hX-do7"/>
                     </connections>
                 </viewController>
@@ -333,7 +344,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f8h-fF-8Pn">
-                                <rect key="frame" x="139" y="133" width="42" height="21"/>
+                                <rect key="frame" x="139" y="133" width="122" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -344,6 +355,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="4VH-Ce-Tfm"/>
                     <connections>
+                        <outlet property="com_test" destination="f8h-fF-8Pn" id="y3z-gx-YdB"/>
                         <segue destination="StR-r9-q7A" kind="push" identifier="DestinationDetails" id="MPr-t8-ryV"/>
                     </connections>
                 </viewController>

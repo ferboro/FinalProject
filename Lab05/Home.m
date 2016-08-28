@@ -20,6 +20,7 @@
 
 @end
 
+uint8_t tipo_auto = 0;
 @implementation Home
 /**********************************************************************************************/
 #pragma mark - Initialization methods
@@ -32,8 +33,33 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+
 }
 //-------------------------------------------------------------------------------
+- (IBAction)btnSedanPressed:(id)sender {
+    tipo_auto = sedan;
+    _btnCoupe.on = false;
+    _btnCamioneta.on = false;
+    _btnPickup.on = false;
+}
+- (IBAction)btnCoupePressed:(id)sender {
+    tipo_auto = coupe;
+    _btnSedan.on = false;
+    _btnCamioneta.on = false;
+    _btnPickup.on = false;
+}
+- (IBAction)btnCamionetaPressed:(id)sender {
+    tipo_auto = camioneta;
+    _btnCoupe.on = false;
+    _btnSedan.on = false;
+    _btnPickup.on = false;
+}
+- (IBAction)btnPickupPressed:(id)sender {
+    tipo_auto = pickup;
+    _btnCoupe.on = false;
+    _btnCamioneta.on = false;
+    _btnSedan.on = false;
+}
 //- (void)initController {
 //    self.destinationTitles          = [[NSMutableArray alloc] initWithObjects: @"Jalisco", @"Quintana Roo", @"Oaxaca", @"Chiapas", @"Sonora", nil];
 //    self.destinationPhotos          = [[NSMutableArray alloc] initWithObjects: @"jalisco.png", @"quintanaroo.png", @"oaxaca.png", @"chiapas.png", @"sonora.png", nil];
@@ -83,7 +109,8 @@
     
     if ([segue.destinationViewController isKindOfClass:[SecondDisplay class]]) {
         SecondDisplay *destination     = [segue destinationViewController];
-        destination.destinationTitle        = self.stTitleSelected;
+        destination.tipo_de_auto        = tipo_auto;
+        
         //destination.destinationDescription  = self.stDescriptionSelected;
         //destination.destinationPhoto        = self.stPhotoSelected;
         
@@ -97,7 +124,5 @@
 //    Home *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SecondDisplay"];
 //    [self presentViewController:vc animated:YES completion:nil];
     [self performSegueWithIdentifier:@"SecondDisplay" sender:self];
-}
-- (IBAction)btnSedanPressed:(id)sender {
 }
 @end
