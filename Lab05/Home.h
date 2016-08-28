@@ -25,6 +25,18 @@
 @property (strong, nonatomic) IBOutlet UISwitch *btnCoupe;
 @property (strong, nonatomic) IBOutlet UISwitch *btnCamioneta;
 @property (strong, nonatomic) IBOutlet UISwitch *btnPickup;
+- (IBAction)btnACPressed:(id)sender;
+- (IBAction)btnTurboPressed:(id)sender;
+- (IBAction)btnFWDPressed:(id)sender;
+- (IBAction)btnACBizonaPressed:(id)sender;
+- (IBAction)btn4CilPressed:(id)sender;
+- (IBAction)btnRWDPressed:(id)sender;
+- (IBAction)btnQCPressed:(id)sender;
+- (IBAction)btnV6Pressed:(id)sender;
+- (IBAction)btn4x4Pressed:(id)sender;
+- (IBAction)btninfotainmentPressed:(id)sender;
+- (IBAction)btnV8Pressed:(id)sender;
+- (IBAction)btnAWDPressed:(id)sender;
 
 @end
 
@@ -32,3 +44,6 @@
 #define     coupe           2
 #define     camioneta       3
 #define     pickup          4
+
+
+

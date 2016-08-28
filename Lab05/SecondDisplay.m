@@ -20,9 +20,8 @@
 @property NSString *stPhotoSelected;
 
 
-//@property NSUInteger tipo_de_auto;
 @end
-
+extern bool caracteristicasdeauto[12];
 @implementation SecondDisplay
 /**********************************************************************************************/
 #pragma mark - Initialization methods
@@ -38,7 +37,7 @@
 }
 //-------------------------------------------------------------------------------
 - (void)initController {
-    if (_tipo_de_auto == sedan)
+    if (_tipo_de_auto == sedan && caracteristicasdeauto[0] == 1)
     {
         self.com_test.text = @"sedan";
     }

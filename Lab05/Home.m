@@ -18,7 +18,10 @@
 @property NSString *stDescriptionSelected;
 @property NSString *stPhotoSelected;
 
+
 @end
+
+bool caracteristicasdeauto[12]={0,0,0,0,0,0,0,0,0,0,0,0};
 
 uint8_t tipo_auto = 0;
 @implementation Home
@@ -124,5 +127,52 @@ uint8_t tipo_auto = 0;
 //    Home *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SecondDisplay"];
 //    [self presentViewController:vc animated:YES completion:nil];
     [self performSegueWithIdentifier:@"SecondDisplay" sender:self];
+}
+- (IBAction)btnACPressed:(id)sender {
+    caracteristicasdeauto[0]= !caracteristicasdeauto[0];
+}
+
+- (IBAction)btnTurboPressed:(id)sender {
+    caracteristicasdeauto[1]= !caracteristicasdeauto[1];
+}
+
+- (IBAction)btnFWDPressed:(id)sender {
+    caracteristicasdeauto[2]= !caracteristicasdeauto[2];
+}
+
+- (IBAction)btnACBizonaPressed:(id)sender {
+    caracteristicasdeauto[3]= !caracteristicasdeauto[3];
+}
+
+- (IBAction)btn4CilPressed:(id)sender {
+    caracteristicasdeauto[4]= !caracteristicasdeauto[4];
+}
+
+- (IBAction)btnRWDPressed:(id)sender {
+    caracteristicasdeauto[5]= !caracteristicasdeauto[5];
+}
+
+- (IBAction)btnQCPressed:(id)sender {
+    caracteristicasdeauto[6]= !caracteristicasdeauto[6];
+}
+
+- (IBAction)btnV6Pressed:(id)sender {
+    caracteristicasdeauto[7]= !caracteristicasdeauto[7];
+}
+
+- (IBAction)btn4x4Pressed:(id)sender {
+    caracteristicasdeauto[8]= !caracteristicasdeauto[8];
+}
+
+- (IBAction)btninfotainmentPressed:(id)sender {
+    caracteristicasdeauto[9]= !caracteristicasdeauto[9];
+}
+
+- (IBAction)btnV8Pressed:(id)sender {
+    caracteristicasdeauto[10]= !caracteristicasdeauto[10];
+}
+
+- (IBAction)btnAWDPressed:(id)sender {
+    caracteristicasdeauto[11]= !caracteristicasdeauto[11];
 }
 @end
