@@ -16,6 +16,9 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *btnSearch;
 - (IBAction)btnSearchPressed:(id)sender;
+@property (strong, nonatomic) IBOutlet UISwitch *bsedan;
+- (IBAction)btnSedanPressed:(id)sender;
+@property (strong, nonatomic) IBOutlet UISwitch *btnCoupePressed;
 
 @end
 

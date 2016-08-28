@@ -98,4 +98,6 @@
 //    [self presentViewController:vc animated:YES completion:nil];
     [self performSegueWithIdentifier:@"SecondDisplay" sender:self];
 }
+- (IBAction)btnSedanPressed:(id)sender {
+}
 @end

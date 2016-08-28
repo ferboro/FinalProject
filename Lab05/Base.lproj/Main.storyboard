@@ -24,21 +24,24 @@
                                     <action selector="btnSearchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U3H-9O-Nco"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="nqz-xI-ehj" userLabel="SW_Tipo1">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="nqz-xI-ehj" userLabel="SW_Tipo1">
                                 <rect key="frame" x="91" y="167" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="FKw-Cr-dyz" userLabel="SW_Tipo2">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="FKw-Cr-dyz" userLabel="SW_Tipo2">
                                 <rect key="frame" x="236" y="128" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="apl-QX-wac" userLabel="SW_Tipo3">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="apl-QX-wac" userLabel="SW_Tipo3">
                                 <rect key="frame" x="236" y="167" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="kgi-bL-xtS" userLabel="SW_Tipo4">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="kgi-bL-xtS" userLabel="SW_Tipo4">
                                 <rect key="frame" x="91" y="128" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <connections>
+                                    <action selector="btnSedanPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="xGQ-Ix-Js6"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sédan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GUd-fx-feo" userLabel="Lbl_Tipo1">
                                 <rect key="frame" x="20" y="128" width="63" height="31"/>
@@ -100,7 +103,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="3FB-Zz-q3n" userLabel="SW_Chs1">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="3FB-Zz-q3n" userLabel="SW_Chs1">
                                 <rect key="frame" x="57" y="268" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </switch>
@@ -111,7 +114,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="5ww-Ju-j48" userLabel="SW_Chs2">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="5ww-Ju-j48" userLabel="SW_Chs2">
                                 <rect key="frame" x="161" y="268" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </switch>
@@ -122,7 +125,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="3ve-ta-rps" userLabel="SW_Chs3">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="3ve-ta-rps" userLabel="SW_Chs3">
                                 <rect key="frame" x="265" y="268" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </switch>
@@ -133,7 +136,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="MzV-co-fiZ" userLabel="SW_Chs4">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="MzV-co-fiZ" userLabel="SW_Chs4">
                                 <rect key="frame" x="57" y="307" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </switch>
@@ -158,11 +161,11 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="6w2-ac-mF0" userLabel="SW_Chs5">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="6w2-ac-mF0" userLabel="SW_Chs5">
                                 <rect key="frame" x="161" y="307" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="jcs-IH-tqA" userLabel="SW_Chs6">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="jcs-IH-tqA" userLabel="SW_Chs6">
                                 <rect key="frame" x="265" y="307" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </switch>
@@ -187,7 +190,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="JOc-5m-taH" userLabel="SW_Chs7">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="JOc-5m-taH" userLabel="SW_Chs7">
                                 <rect key="frame" x="57" y="346" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </switch>
@@ -198,7 +201,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="e5m-Z1-8i1" userLabel="SW_Chs8">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="e5m-Z1-8i1" userLabel="SW_Chs8">
                                 <rect key="frame" x="161" y="346" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </switch>
@@ -209,7 +212,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="LG6-HQ-KmA" userLabel="SW_Chs9">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="LG6-HQ-KmA" userLabel="SW_Chs9">
                                 <rect key="frame" x="265" y="346" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </switch>
@@ -220,10 +223,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="biA-nj-gTC" userLabel="SW_Chs9">
-                                <rect key="frame" x="265" y="385" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Tr-nb-uar" userLabel="Lbl_Chs10">
                                 <rect key="frame" x="0.0" y="385" width="63" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -238,11 +237,11 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="D0k-NN-mx7" userLabel="SW_Chs10">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="D0k-NN-mx7" userLabel="SW_Chs10">
                                 <rect key="frame" x="57" y="385" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="WGv-mZ-YVR" userLabel="SW_Chs11">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="WGv-mZ-YVR" userLabel="SW_Chs11">
                                 <rect key="frame" x="161" y="385" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </switch>
@@ -264,6 +263,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="biA-nj-gTC" userLabel="SW_Chs9">
+                                <rect key="frame" x="265" y="385" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -271,6 +274,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
+                        <outlet property="bsedan" destination="kgi-bL-xtS" id="V2a-FG-8lm"/>
+                        <outlet property="btnCoupePressed" destination="nqz-xI-ehj" id="6lf-xw-bnA"/>
                         <outlet property="btnSearch" destination="pjW-qM-0pK" id="Qkk-Qh-9fL"/>
                         <segue destination="ZMd-oS-gI1" kind="push" identifier="SecondDisplay" id="nM4-hX-do7"/>
                     </connections>
@@ -326,6 +331,15 @@
                     <view key="view" contentMode="scaleToFill" id="bwC-05-rcI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f8h-fF-8Pn">
+                                <rect key="frame" x="139" y="133" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="4VH-Ce-Tfm"/>
@@ -349,18 +363,18 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="230"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aMX-dj-5wj" userLabel="Lbl Title">
-                                <rect key="frame" x="0.0" y="314" width="320" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zHj-Qk-r5i" userLabel="Lbl Description">
                                 <rect key="frame" x="20" y="352" width="280" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aMX-dj-5wj" userLabel="Lbl Title">
+                                <rect key="frame" x="0.0" y="314" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
