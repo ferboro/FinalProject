@@ -19,12 +19,8 @@
 
 - (IBAction)btnSedanPressed:(id)sender;
 - (IBAction)btnCoupePressed:(id)sender;
-- (IBAction)btnCamionetaPressed:(id)sender;
-- (IBAction)btnPickupPressed:(id)sender;
 @property (strong, nonatomic) IBOutlet UISwitch *btnSedan;
 @property (strong, nonatomic) IBOutlet UISwitch *btnCoupe;
-@property (strong, nonatomic) IBOutlet UISwitch *btnCamioneta;
-@property (strong, nonatomic) IBOutlet UISwitch *btnPickup;
 
 - (IBAction)btnACPressed:(id)sender;
 - (IBAction)btnTurboPressed:(id)sender;
@@ -63,8 +59,8 @@
 
 #define     sedan           1
 #define     coupe           2
-#define     camioneta       3
-#define     pickup          4
+#define     cheap           0
+#define     expensive       1
 
 
 

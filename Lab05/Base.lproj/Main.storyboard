@@ -13,20 +13,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="FKw-Cr-dyz" userLabel="SW_Tipo2">
-                                <rect key="frame" x="236" y="128" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <connections>
-                                    <action selector="btnCamionetaPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="H7n-Ca-QbP"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="apl-QX-wac" userLabel="SW_Tipo3">
-                                <rect key="frame" x="236" y="167" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <connections>
-                                    <action selector="btnPickupPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="0S5-Hi-7v2"/>
-                                </connections>
-                            </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="kgi-bL-xtS" userLabel="SW_Tipo4">
                                 <rect key="frame" x="91" y="128" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -42,21 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coupe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QXJ-bb-aId" userLabel="Lbl_Tipo2">
-                                <rect key="frame" x="20" y="167" width="63" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camioneta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wyz-pg-YpK" userLabel="Lbl_Tipo3">
-                                <rect key="frame" x="145" y="128" width="83" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick-Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fUq-ze-6us" userLabel="Lbl_Tipo4">
-                                <rect key="frame" x="149" y="167" width="83" height="31"/>
+                                <rect key="frame" x="169" y="128" width="63" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,13 +48,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="NTv-WQ-Iib" userLabel="Fld_Seccion1">
-                                <rect key="frame" x="26" y="226" width="269" height="30"/>
+                                <rect key="frame" x="26" y="198" width="269" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleccione las caracteristicas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rPn-Je-hnP" userLabel="Lbl_Seccion1">
-                                <rect key="frame" x="48" y="230" width="226" height="21"/>
+                                <rect key="frame" x="48" y="202" width="226" height="21"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -95,56 +67,56 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="3FB-Zz-q3n" userLabel="SW_Chs1">
-                                <rect key="frame" x="57" y="264" width="51" height="31"/>
+                                <rect key="frame" x="57" y="253" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <connections>
                                     <action selector="btnACPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="Kch-mr-0eG"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="011-Lb-yzi" userLabel="Lbl_Chs1">
-                                <rect key="frame" x="20" y="273" width="23" height="21"/>
+                                <rect key="frame" x="20" y="256" width="23" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="5ww-Ju-j48" userLabel="SW_Chs2">
-                                <rect key="frame" x="161" y="268" width="51" height="31"/>
+                                <rect key="frame" x="161" y="253" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <connections>
                                     <action selector="btnTurboPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="eUm-5Y-Xm7"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turbo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1hU-Yw-xEL" userLabel="Lbl_Chs2">
-                                <rect key="frame" x="114" y="273" width="45" height="21"/>
+                                <rect key="frame" x="114" y="258" width="45" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="3ve-ta-rps" userLabel="SW_Chs3">
-                                <rect key="frame" x="265" y="268" width="51" height="31"/>
+                                <rect key="frame" x="265" y="253" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <connections>
                                     <action selector="btnFWDPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="eLX-U6-rMx"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uJa-Nb-nRc" userLabel="Lbl_Chs3">
-                                <rect key="frame" x="218" y="273" width="38" height="21"/>
+                                <rect key="frame" x="219" y="258" width="38" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="MzV-co-fiZ" userLabel="SW_Chs4">
-                                <rect key="frame" x="57" y="307" width="51" height="31"/>
+                                <rect key="frame" x="57" y="302" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <connections>
                                     <action selector="btnACBizonaPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="BYg-8j-dgR"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" minimumScaleFactor="0.5" id="1LG-CN-kaJ" userLabel="Lbl_Chs4">
-                                <rect key="frame" x="5" y="292" width="56" height="62"/>
+                                <rect key="frame" x="5" y="289" width="56" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="AC Bizona">
@@ -158,24 +130,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 Cil." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Ag-KO-sOY" userLabel="Lbl_Chs5">
-                                <rect key="frame" x="119" y="312" width="40" height="21"/>
+                                <rect key="frame" x="119" y="309" width="40" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="6w2-ac-mF0" userLabel="SW_Chs5">
-                                <rect key="frame" x="161" y="307" width="51" height="31"/>
+                                <rect key="frame" x="161" y="302" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <connections>
                                     <action selector="btn4CilPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="f4J-Rb-Znq"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="jcs-IH-tqA" userLabel="SW_Chs6">
-                                <rect key="frame" x="265" y="307" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <connections>
-                                    <action selector="btnRWDPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="Pje-2H-9gm"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RWD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uqz-Wl-DQk" userLabel="Lbl_Chs6">
@@ -284,7 +249,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="nqz-xI-ehj" userLabel="SW_Tipo1">
-                                <rect key="frame" x="91" y="167" width="51" height="31"/>
+                                <rect key="frame" x="240" y="128" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <connections>
                                     <action selector="btnCoupePressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="msY-Ih-Ks2"/>
@@ -336,6 +301,13 @@
                                     <action selector="btnPrice1Pressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="41l-uT-xhS"/>
                                 </connections>
                             </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="jcs-IH-tqA" userLabel="SW_Chs6">
+                                <rect key="frame" x="265" y="302" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <connections>
+                                    <action selector="btnRWDPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="Pje-2H-9gm"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -348,10 +320,8 @@
                         <outlet property="btnACBizonaPressed" destination="MzV-co-fiZ" id="bmV-A0-9Fu"/>
                         <outlet property="btnACPressed" destination="3FB-Zz-q3n" id="i6R-Hx-Mud"/>
                         <outlet property="btnAWDPressed" destination="biA-nj-gTC" id="08o-aP-p65"/>
-                        <outlet property="btnCamioneta" destination="FKw-Cr-dyz" id="Rrg-lF-A6B"/>
                         <outlet property="btnCoupe" destination="nqz-xI-ehj" id="AQ5-kJ-T37"/>
                         <outlet property="btnFWDPressed" destination="3ve-ta-rps" id="xkU-M2-r2V"/>
-                        <outlet property="btnPickup" destination="apl-QX-wac" id="WqO-G8-BIi"/>
                         <outlet property="btnPrice1" destination="QVN-kS-XOT" id="xVL-os-FCE"/>
                         <outlet property="btnPrice2" destination="nIO-p6-oBr" id="JoQ-pL-9KQ"/>
                         <outlet property="btnQCPressed" destination="JOc-5m-taH" id="xrz-Es-PRY"/>
@@ -417,10 +387,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uhj-4j-wmo">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uhj-4j-wmo" userLabel="tblHome">
                                 <rect key="frame" x="0.0" y="65" width="320" height="503"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZMd-oS-gI1" id="5oT-qG-S52"/>
+                                    <outlet property="delegate" destination="ZMd-oS-gI1" id="vWy-n3-k4B"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>

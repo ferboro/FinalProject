@@ -21,7 +21,7 @@
 
 @end
 
-unsigned char caracteristicasdeauto[8]={0,0,0,0,0,0,0,0};
+unsigned char caracteristicasdeauto[8]={3,0,0,0,0,0,0,0};
                                      // | | | | | | | '-Price
                                      // | | | | | | '- Traccion
                                      // | | | | | '- Size of motor
@@ -50,34 +50,14 @@ uint8_t tipo_auto = 0;
 - (IBAction)btnSedanPressed:(id)sender {
     //tipo_auto = sedan;
     _btnCoupe.on = false;
-    _btnCamioneta.on = false;
-    _btnPickup.on = false;
     
-    caracteristicasdeauto[0] = 0;
+    caracteristicasdeauto[0] = sedan;
 }
 - (IBAction)btnCoupePressed:(id)sender {
    //tipo_auto = coupe;
     _btnSedan.on = false;
-    _btnCamioneta.on = false;
-    _btnPickup.on = false;
     
-    caracteristicasdeauto[0] = 1;
-}
-- (IBAction)btnCamionetaPressed:(id)sender {
-    //tipo_auto = camioneta;
-    _btnCoupe.on = false;
-    _btnSedan.on = false;
-    _btnPickup.on = false;
-    
-    caracteristicasdeauto[0] = 2;
-}
-- (IBAction)btnPickupPressed:(id)sender {
-    //tipo_auto = pickup;
-    _btnCoupe.on = false;
-    _btnCamioneta.on = false;
-    _btnSedan.on = false;
-    
-    caracteristicasdeauto[0] = 3;
+    caracteristicasdeauto[0] = coupe;
 }
 
 //- (void)initController {

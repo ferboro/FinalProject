@@ -19,9 +19,18 @@
 @property NSString *stDescriptionSelected;
 @property NSString *stPhotoSelected;
 
-
+@property NSMutableArray *m240i;
 @end
-extern bool caracteristicasdeauto[12];
+char m240i[8] = {1,0,0,0,0,0,0,0};
+extern char caracteristicasdeauto[8];//{0,0,0,0,0,0,0,0};
+                                     // | | | | | | | '-Price
+                                     // | | | | | | '- Traccion
+                                     // | | | | | '- Size of motor
+                                     // | | | | '- Turbo or Not
+                                     // | | | '- Infotainment or not
+                                     // | | '- QC(Quemacoco) or not
+                                     // | '- Air Conditioner or Bizone
+                                     //  '-Type of car   sedan 1, coupe 2
 @implementation SecondDisplay
 /**********************************************************************************************/
 #pragma mark - Initialization methods
@@ -37,44 +46,34 @@ extern bool caracteristicasdeauto[12];
 }
 //-------------------------------------------------------------------------------
 - (void)initController {
-    if (_tipo_de_auto == sedan && caracteristicasdeauto[0] == 1)
+    if (caracteristicasdeauto[0] == coupe && caracteristicasdeauto[7] == cheap)
     {
-        self.com_test.text = @"sedan";
+        self.destinationTitles  = [[NSMutableArray alloc] initWithObjects: @"BMW", @"BMW", @"Chevrolet", @"Audi", @"Audi", nil];
+        self.destinationPhotos          = [[NSMutableArray alloc] initWithObjects: @"m240i.jpg", @"440i.jpg", @"camaro.jpg", @"a5.jpg", @"auditt.jpg", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"M240i", @"440i", @"Camaro", @"A5", @"TT", nil];
     }
-    //self.lblDestinationTitle.text          = self.destinationTitle;
-    /*
-    if([self.destinationTitle  isEqual: @"Jalisco"])
+    else if (caracteristicasdeauto[0] == coupe && caracteristicasdeauto[7] == expensive)
     {
-        self.destinationTitles  = [[NSMutableArray alloc] initWithObjects: @"Chapala", @"Mazamitla", @"Tapalpa", @"Puerto Vallarta", @"Tequila", nil];
-        self.destinationPhotos          = [[NSMutableArray alloc] initWithObjects: @"chapala.png", @"mazamitla.png", @"tapalpa.png", @"puertovallarta.png", @"tequila.png", nil];
-        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Ven y disfruta de Chapala", @"Ven y disfruta de Mazamitla", @"Ven y disfruta de Tapalpa", @"Ven y disfruta de Puerto Vallarta", @"Ven y disfruta de Tequila", nil];
+    self.destinationTitles  = [[NSMutableArray alloc] initWithObjects: @"BMW", @"BMW", @"Chevrolet", @"Audi", @"Audi", nil];
+    self.destinationPhotos          = [[NSMutableArray alloc] initWithObjects: @"i8.jpg", @"M6.jpg", @"corvette.jpg", @"R8.jpg", @"RS5.jpg", nil];
+    self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"i8", @"M6", @"Corvette", @"R8", @"RS5", nil];
     }
-    else if ([self.destinationTitle  isEqual: @"Quintana Roo"])
+    else if (caracteristicasdeauto[0] == sedan && caracteristicasdeauto[7] == cheap)
     {
-    self.destinationTitles          = [[NSMutableArray alloc] initWithObjects: @"Bacalar", @"Cozumel", @"Isla Mujeres", @"Puerto Morelos", @"Tulum", nil];
-    self.destinationPhotos          = [[NSMutableArray alloc] initWithObjects: @"bacalar.png", @"cozumel.png", @"islamujeres.png", @"puertomorelos.png", @"tulum.png", nil];
-    self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Ven y disfruta de Bacalar", @"Ven y disfruta de Cozumel", @"Ven y disfruta de Isla Mujeres", @"Ven y disfruta de Puerto Morelos", @"Ven y disfruta de Tulum", nil];
+        self.destinationTitles  = [[NSMutableArray alloc] initWithObjects: @"Cadillac", @"Cadillac", @"Mercedes", @"Mercedes", @"Dodge", nil];
+        self.destinationPhotos          = [[NSMutableArray alloc] initWithObjects: @"ats.jpg", @"cts.jpg", @"e.jpg", @"c.jpg", @"charger.jpg", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"ATS", @"CTS", @"Clase E", @"Clase C", @"Charger", nil];
     }
-    else if ([self.destinationTitle  isEqual: @"Oaxaca"])
+    else if (caracteristicasdeauto[0] == sedan && caracteristicasdeauto[7] == expensive)
     {
-        self.destinationTitles          = [[NSMutableArray alloc] initWithObjects: @"Mazunte", @"Pluma Hidalgo", @"Teposcolula", @"Santa Catarina", @"Tilcajete", nil];
-        self.destinationPhotos          = [[NSMutableArray alloc] initWithObjects: @"mazunte.png", @"plumahidalgo.png", @"sanpabloteposcolula.png", @"santacatarina.png", @"tilcajete.png", nil];
-        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Ven y disfruta de Mazunte", @"Ven y disfruta de Pluma Hidalgo", @"Ven y disfruta de Teposcolula", @"Ven y disfruta de Santa Catarina", @"Ven y disfruta de Tilcajete", nil];
-    }
-    else if ([self.destinationTitle  isEqual: @"Chiapas"])
-    {
-        self.destinationTitles          = [[NSMutableArray alloc] initWithObjects: @"Chiapa de Corzo", @"Comitan", @"Palenque", @"San Cristobal", @"Tapachula", nil];
-        self.destinationPhotos          = [[NSMutableArray alloc] initWithObjects: @"chiapadecorzo.png", @"comitandedominguez.png", @"palenque.png", @"sancristobal.png", @"tapachula.png", nil];
-        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Ven y disfruta de Chiapa de Corzo", @"Ven y disfruta de Comitan", @"Ven y disfruta de Palenque", @"Ven y disfruta de San Cristobal", @"Ven y disfruta de Tapachula", nil];
+        self.destinationTitles  = [[NSMutableArray alloc] initWithObjects: @"Cadillac", @"Cadillac", @"Mercedes", @"Mercedes", @"Dodge", nil];
+        self.destinationPhotos          = [[NSMutableArray alloc] initWithObjects: @"atsv.jpg", @"ctsv.jpg", @"eamg.jpg", @"camg.jpg", @"hellcat.jpg", nil];
+        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"ATS-V", @"CTS-V", @"E63 AMG", @"C63 AMG", @"Charger Hellcat", nil];
     }
     else
     {
-        //Sonora
-        self.destinationTitles          = [[NSMutableArray alloc] initWithObjects: @"Ciudad Obregon", @"Guaymas", @"Hermosillo", @"Navojoa", @"Puerto Penasco", nil];
-        self.destinationPhotos          = [[NSMutableArray alloc] initWithObjects: @"cajeme.png", @"guaymas.png", @"hermosillo.png", @"navojoa.png", @"puertopenasco.png", nil];
-        self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Ven y disfruta de Ciudad Obregon", @"Ven y disfruta de Guaymas", @"Ven y disfruta de Hermosillo", @"Ven y disfruta de Navojoa", @"Ven y disfruta de Puerto Pensaco", nil];
-    
-    }*/
+        self.destinationTitles  = [[NSMutableArray alloc] initWithObjects: @"Please make",@"a selection",nil];
+    }
 }
 /**********************************************************************************************/
 #pragma mark - Table source and delegate methods

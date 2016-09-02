@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650BCE171D791E1D005C4B5B /* m240i.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE161D791E1D005C4B5B /* m240i.jpg */; };
+		650BCE1C1D792F7F005C4B5B /* 440i.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE181D792F7F005C4B5B /* 440i.jpg */; };
+		650BCE1D1D792F7F005C4B5B /* a5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE191D792F7F005C4B5B /* a5.jpg */; };
+		650BCE1E1D792F7F005C4B5B /* auditt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE1A1D792F7F005C4B5B /* auditt.jpg */; };
+		650BCE1F1D792F7F005C4B5B /* camaro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE1B1D792F7F005C4B5B /* camaro.jpg */; };
+		650BCE251D793213005C4B5B /* corvette.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE201D793213005C4B5B /* corvette.jpg */; };
+		650BCE261D793213005C4B5B /* i8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE211D793213005C4B5B /* i8.jpg */; };
+		650BCE271D793213005C4B5B /* M6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE221D793213005C4B5B /* M6.jpg */; };
+		650BCE281D793213005C4B5B /* R8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE231D793213005C4B5B /* R8.jpg */; };
+		650BCE291D793213005C4B5B /* RS5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE241D793213005C4B5B /* RS5.jpg */; };
+		650BCE301D7933F6005C4B5B /* ats.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE2B1D7933F6005C4B5B /* ats.jpg */; };
+		650BCE311D7933F6005C4B5B /* c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE2C1D7933F6005C4B5B /* c.jpg */; };
+		650BCE321D7933F6005C4B5B /* cts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE2D1D7933F6005C4B5B /* cts.jpg */; };
+		650BCE331D7933F6005C4B5B /* e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE2E1D7933F6005C4B5B /* e.jpg */; };
+		650BCE3B1D7935F7005C4B5B /* atsv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE351D7935F7005C4B5B /* atsv.jpg */; };
+		650BCE3C1D7935F7005C4B5B /* camg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE361D7935F7005C4B5B /* camg.jpg */; };
+		650BCE3D1D7935F7005C4B5B /* charger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE371D7935F7005C4B5B /* charger.jpg */; };
+		650BCE3E1D7935F7005C4B5B /* ctsv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE381D7935F7005C4B5B /* ctsv.jpg */; };
+		650BCE3F1D7935F7005C4B5B /* eamg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE391D7935F7005C4B5B /* eamg.jpg */; };
+		650BCE401D7935F7005C4B5B /* hellcat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650BCE3A1D7935F7005C4B5B /* hellcat.jpg */; };
 		C10E96281D71502F00CA9316 /* Intro.m in Sources */ = {isa = PBXBuildFile; fileRef = C10E96271D71502F00CA9316 /* Intro.m */; };
 		C140DBF91D25E81A006CA499 /* cellHome.m in Sources */ = {isa = PBXBuildFile; fileRef = C140DBF71D25E81A006CA499 /* cellHome.m */; };
 		C140DBFA1D25E81A006CA499 /* cellHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = C140DBF81D25E81A006CA499 /* cellHome.xib */; };
@@ -57,6 +77,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		650BCE161D791E1D005C4B5B /* m240i.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = m240i.jpg; path = imgs/m240i.jpg; sourceTree = "<group>"; };
+		650BCE181D792F7F005C4B5B /* 440i.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 440i.jpg; path = imgs/440i.jpg; sourceTree = "<group>"; };
+		650BCE191D792F7F005C4B5B /* a5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a5.jpg; path = imgs/a5.jpg; sourceTree = "<group>"; };
+		650BCE1A1D792F7F005C4B5B /* auditt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = auditt.jpg; path = imgs/auditt.jpg; sourceTree = "<group>"; };
+		650BCE1B1D792F7F005C4B5B /* camaro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = camaro.jpg; path = imgs/camaro.jpg; sourceTree = "<group>"; };
+		650BCE201D793213005C4B5B /* corvette.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = corvette.jpg; path = imgs/corvette.jpg; sourceTree = "<group>"; };
+		650BCE211D793213005C4B5B /* i8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = i8.jpg; path = imgs/i8.jpg; sourceTree = "<group>"; };
+		650BCE221D793213005C4B5B /* M6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = M6.jpg; path = imgs/M6.jpg; sourceTree = "<group>"; };
+		650BCE231D793213005C4B5B /* R8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = R8.jpg; path = imgs/R8.jpg; sourceTree = "<group>"; };
+		650BCE241D793213005C4B5B /* RS5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = RS5.jpg; path = imgs/RS5.jpg; sourceTree = "<group>"; };
+		650BCE2B1D7933F6005C4B5B /* ats.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ats.jpg; path = imgs/ats.jpg; sourceTree = "<group>"; };
+		650BCE2C1D7933F6005C4B5B /* c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = c.jpg; path = imgs/c.jpg; sourceTree = "<group>"; };
+		650BCE2D1D7933F6005C4B5B /* cts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cts.jpg; path = imgs/cts.jpg; sourceTree = "<group>"; };
+		650BCE2E1D7933F6005C4B5B /* e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = e.jpg; path = imgs/e.jpg; sourceTree = "<group>"; };
+		650BCE351D7935F7005C4B5B /* atsv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = atsv.jpg; path = imgs/atsv.jpg; sourceTree = "<group>"; };
+		650BCE361D7935F7005C4B5B /* camg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = camg.jpg; path = imgs/camg.jpg; sourceTree = "<group>"; };
+		650BCE371D7935F7005C4B5B /* charger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = charger.jpg; path = imgs/charger.jpg; sourceTree = "<group>"; };
+		650BCE381D7935F7005C4B5B /* ctsv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ctsv.jpg; path = imgs/ctsv.jpg; sourceTree = "<group>"; };
+		650BCE391D7935F7005C4B5B /* eamg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = eamg.jpg; path = imgs/eamg.jpg; sourceTree = "<group>"; };
+		650BCE3A1D7935F7005C4B5B /* hellcat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hellcat.jpg; path = imgs/hellcat.jpg; sourceTree = "<group>"; };
 		C10E96261D71502F00CA9316 /* Intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro.h; sourceTree = "<group>"; };
 		C10E96271D71502F00CA9316 /* Intro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro.m; sourceTree = "<group>"; };
 		C140DBF61D25E81A006CA499 /* cellHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellHome.h; sourceTree = "<group>"; };
@@ -125,6 +165,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		650BCE151D791E0A005C4B5B /* Coupes */ = {
+			isa = PBXGroup;
+			children = (
+				650BCE201D793213005C4B5B /* corvette.jpg */,
+				650BCE211D793213005C4B5B /* i8.jpg */,
+				650BCE221D793213005C4B5B /* M6.jpg */,
+				650BCE231D793213005C4B5B /* R8.jpg */,
+				650BCE241D793213005C4B5B /* RS5.jpg */,
+				650BCE181D792F7F005C4B5B /* 440i.jpg */,
+				650BCE191D792F7F005C4B5B /* a5.jpg */,
+				650BCE1A1D792F7F005C4B5B /* auditt.jpg */,
+				650BCE1B1D792F7F005C4B5B /* camaro.jpg */,
+				650BCE161D791E1D005C4B5B /* m240i.jpg */,
+			);
+			name = Coupes;
+			sourceTree = "<group>";
+		};
+		650BCE2A1D7933E4005C4B5B /* Sedans */ = {
+			isa = PBXGroup;
+			children = (
+				650BCE351D7935F7005C4B5B /* atsv.jpg */,
+				650BCE361D7935F7005C4B5B /* camg.jpg */,
+				650BCE371D7935F7005C4B5B /* charger.jpg */,
+				650BCE381D7935F7005C4B5B /* ctsv.jpg */,
+				650BCE391D7935F7005C4B5B /* eamg.jpg */,
+				650BCE3A1D7935F7005C4B5B /* hellcat.jpg */,
+				650BCE2B1D7933F6005C4B5B /* ats.jpg */,
+				650BCE2C1D7933F6005C4B5B /* c.jpg */,
+				650BCE2D1D7933F6005C4B5B /* cts.jpg */,
+				650BCE2E1D7933F6005C4B5B /* e.jpg */,
+			);
+			name = Sedans;
+			sourceTree = "<group>";
+		};
 		C140DBF51D25E7DB006CA499 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +305,8 @@
 		C17317D51D24CFE700B0BEA1 /* Lab05 */ = {
 			isa = PBXGroup;
 			children = (
+				650BCE2A1D7933E4005C4B5B /* Sedans */,
+				650BCE151D791E0A005C4B5B /* Coupes */,
 				C154636C1D26E41300E457F2 /* Sonora */,
 				C154635F1D26E40800E457F2 /* QuintanaRoo */,
 				C15463521D26E40100E457F2 /* Oaxaca */,
@@ -339,9 +415,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650BCE321D7933F6005C4B5B /* cts.jpg in Resources */,
+				650BCE3B1D7935F7005C4B5B /* atsv.jpg in Resources */,
 				C154635D1D26E40100E457F2 /* santacatarina.png in Resources */,
+				650BCE3F1D7935F7005C4B5B /* eamg.jpg in Resources */,
 				C15463761D26E41300E457F2 /* navojoa.png in Resources */,
 				C154635E1D26E40100E457F2 /* tilcajete.png in Resources */,
+				650BCE311D7933F6005C4B5B /* c.jpg in Resources */,
 				C154634C1D26E3F200E457F2 /* chiapadecorzo.png in Resources */,
 				C154634D1D26E3F200E457F2 /* chiapas.png in Resources */,
 				C15463681D26E40800E457F2 /* islamujeres.png in Resources */,
@@ -352,32 +432,48 @@
 				C15463741D26E41300E457F2 /* guaymas.png in Resources */,
 				C15463591D26E40100E457F2 /* mazunte.png in Resources */,
 				C140DC171D263BAE006CA499 /* jalisco.png in Resources */,
+				650BCE271D793213005C4B5B /* M6.jpg in Resources */,
 				C154636B1D26E40800E457F2 /* tulum.png in Resources */,
+				650BCE3D1D7935F7005C4B5B /* charger.jpg in Resources */,
 				C140DC051D25F213006CA499 /* destination03.png in Resources */,
 				C140DC1A1D263BAE006CA499 /* tapalpa.png in Resources */,
 				C15463661D26E40800E457F2 /* bacalar.png in Resources */,
 				C15463781D26E41300E457F2 /* sonora.png in Resources */,
+				650BCE3C1D7935F7005C4B5B /* camg.jpg in Resources */,
 				C154634F1D26E3F200E457F2 /* palenque.png in Resources */,
 				C15463731D26E41300E457F2 /* cajeme.png in Resources */,
+				650BCE171D791E1D005C4B5B /* m240i.jpg in Resources */,
+				650BCE251D793213005C4B5B /* corvette.jpg in Resources */,
 				C17317E91D24CFE700B0BEA1 /* LaunchScreen.storyboard in Resources */,
 				C15463751D26E41300E457F2 /* hermosillo.png in Resources */,
 				C17317E61D24CFE700B0BEA1 /* Assets.xcassets in Resources */,
+				650BCE301D7933F6005C4B5B /* ats.jpg in Resources */,
+				650BCE331D7933F6005C4B5B /* e.jpg in Resources */,
 				C15463691D26E40800E457F2 /* puertomorelos.png in Resources */,
+				650BCE261D793213005C4B5B /* i8.jpg in Resources */,
 				C154636A1D26E40800E457F2 /* quintanaroo.png in Resources */,
+				650BCE3E1D7935F7005C4B5B /* ctsv.jpg in Resources */,
+				650BCE1E1D792F7F005C4B5B /* auditt.jpg in Resources */,
 				C140DC041D25F213006CA499 /* destination02.png in Resources */,
+				650BCE291D793213005C4B5B /* RS5.jpg in Resources */,
 				C140DC031D25F213006CA499 /* destination01.png in Resources */,
 				C15463511D26E3F200E457F2 /* tapachula.png in Resources */,
+				650BCE1D1D792F7F005C4B5B /* a5.jpg in Resources */,
 				C15463671D26E40800E457F2 /* cozumel.png in Resources */,
 				C140DC061D25F213006CA499 /* destination04.png in Resources */,
+				650BCE1C1D792F7F005C4B5B /* 440i.jpg in Resources */,
 				C154637A1D26FA8700E457F2 /* sancristobal.png in Resources */,
 				C140DC071D25F213006CA499 /* destination05.png in Resources */,
+				650BCE1F1D792F7F005C4B5B /* camaro.jpg in Resources */,
 				C154635A1D26E40100E457F2 /* oaxaca.png in Resources */,
 				C140DC191D263BAE006CA499 /* puertovallarta.png in Resources */,
 				C140DBFA1D25E81A006CA499 /* cellHome.xib in Resources */,
 				C140DC161D263BAE006CA499 /* chapala.png in Resources */,
+				650BCE401D7935F7005C4B5B /* hellcat.jpg in Resources */,
 				C140DC1B1D263BAE006CA499 /* tequila.png in Resources */,
 				C15463771D26E41300E457F2 /* puertopenasco.png in Resources */,
 				C17317E11D24CFE700B0BEA1 /* Main.storyboard in Resources */,
+				650BCE281D793213005C4B5B /* R8.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
