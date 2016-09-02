@@ -21,7 +21,15 @@
 
 @end
 
-bool caracteristicasdeauto[12]={0,0,0,0,0,0,0,0,0,0,0,0};
+unsigned char caracteristicasdeauto[8]={0,0,0,0,0,0,0,0};
+                                     // | | | | | | | '-Price
+                                     // | | | | | | '- Traccion
+                                     // | | | | | '- Size of motor
+                                     // | | | | '- Turbo or Not
+                                     // | | | '- Infotainment or not
+                                     // | | '- QC(Quemacoco) or not
+                                     // | '- Air Conditioner or Bizone
+                                     //  '-Type of car
 
 uint8_t tipo_auto = 0;
 @implementation Home
@@ -40,29 +48,38 @@ uint8_t tipo_auto = 0;
 }
 //-------------------------------------------------------------------------------
 - (IBAction)btnSedanPressed:(id)sender {
-    tipo_auto = sedan;
+    //tipo_auto = sedan;
     _btnCoupe.on = false;
     _btnCamioneta.on = false;
     _btnPickup.on = false;
+    
+    caracteristicasdeauto[0] = 0;
 }
 - (IBAction)btnCoupePressed:(id)sender {
-    tipo_auto = coupe;
+   //tipo_auto = coupe;
     _btnSedan.on = false;
     _btnCamioneta.on = false;
     _btnPickup.on = false;
+    
+    caracteristicasdeauto[0] = 1;
 }
 - (IBAction)btnCamionetaPressed:(id)sender {
-    tipo_auto = camioneta;
+    //tipo_auto = camioneta;
     _btnCoupe.on = false;
     _btnSedan.on = false;
     _btnPickup.on = false;
+    
+    caracteristicasdeauto[0] = 2;
 }
 - (IBAction)btnPickupPressed:(id)sender {
-    tipo_auto = pickup;
+    //tipo_auto = pickup;
     _btnCoupe.on = false;
     _btnCamioneta.on = false;
     _btnSedan.on = false;
+    
+    caracteristicasdeauto[0] = 3;
 }
+
 //- (void)initController {
 //    self.destinationTitles          = [[NSMutableArray alloc] initWithObjects: @"Jalisco", @"Quintana Roo", @"Oaxaca", @"Chiapas", @"Sonora", nil];
 //    self.destinationPhotos          = [[NSMutableArray alloc] initWithObjects: @"jalisco.png", @"quintanaroo.png", @"oaxaca.png", @"chiapas.png", @"sonora.png", nil];
@@ -129,50 +146,79 @@ uint8_t tipo_auto = 0;
     [self performSegueWithIdentifier:@"SecondDisplay" sender:self];
 }
 - (IBAction)btnACPressed:(id)sender {
-    caracteristicasdeauto[0]= !caracteristicasdeauto[0];
+    _btnACBizonaPressed.on = false;
+    caracteristicasdeauto[1] = 0;
 }
 
 - (IBAction)btnTurboPressed:(id)sender {
-    caracteristicasdeauto[1]= !caracteristicasdeauto[1];
-}
-
-- (IBAction)btnFWDPressed:(id)sender {
-    caracteristicasdeauto[2]= !caracteristicasdeauto[2];
-}
-
-- (IBAction)btnACBizonaPressed:(id)sender {
-    caracteristicasdeauto[3]= !caracteristicasdeauto[3];
-}
-
-- (IBAction)btn4CilPressed:(id)sender {
     caracteristicasdeauto[4]= !caracteristicasdeauto[4];
 }
 
+- (IBAction)btnFWDPressed:(id)sender {
+    _btnRWDPressed.on = false;
+    _btn4x4Pressed.on = false;
+    _btnAWDPressed.on = false;
+    caracteristicasdeauto[6]= 0;
+}
+
+- (IBAction)btnACBizonaPressed:(id)sender {
+    _btnACPressed.on = false;
+    caracteristicasdeauto[1] = 1;
+}
+
+- (IBAction)btn4CilPressed:(id)sender {
+    _btnV6Pressed.on = false;
+    _btnV8Pressed.on = false;
+    caracteristicasdeauto[5]= 0;
+}
+
 - (IBAction)btnRWDPressed:(id)sender {
-    caracteristicasdeauto[5]= !caracteristicasdeauto[5];
+    _btnFWDPressed.on = false;
+    _btn4x4Pressed.on = false;
+    _btnAWDPressed.on = false;
+    caracteristicasdeauto[6]= 1;
 }
 
 - (IBAction)btnQCPressed:(id)sender {
-    caracteristicasdeauto[6]= !caracteristicasdeauto[6];
+    caracteristicasdeauto[2]= !caracteristicasdeauto[2];
 }
 
 - (IBAction)btnV6Pressed:(id)sender {
-    caracteristicasdeauto[7]= !caracteristicasdeauto[7];
+    _btn4CilPressed.on = false;
+    _btnV8Pressed.on = false;
+    caracteristicasdeauto[5]= 1;
 }
 
 - (IBAction)btn4x4Pressed:(id)sender {
-    caracteristicasdeauto[8]= !caracteristicasdeauto[8];
+    _btnFWDPressed.on = false;
+    _btnRWDPressed.on = false;
+    _btnAWDPressed.on = false;
+    caracteristicasdeauto[6]= 2;
 }
 
 - (IBAction)btninfotainmentPressed:(id)sender {
-    caracteristicasdeauto[9]= !caracteristicasdeauto[9];
+    caracteristicasdeauto[3]= !caracteristicasdeauto[3];
 }
 
 - (IBAction)btnV8Pressed:(id)sender {
-    caracteristicasdeauto[10]= !caracteristicasdeauto[10];
+    _btn4CilPressed.on = false;
+    _btnV6Pressed.on = false;
+    caracteristicasdeauto[5]= 2;
 }
 
 - (IBAction)btnAWDPressed:(id)sender {
-    caracteristicasdeauto[11]= !caracteristicasdeauto[11];
+    _btnFWDPressed.on = false;
+    _btnRWDPressed.on = false;
+    _btn4x4Pressed.on = false;
+    caracteristicasdeauto[6]= 3;
+}
+- (IBAction)btnPrice1Pressed:(id)sender {
+    _btnPrice2.on = false;
+    caracteristicasdeauto[7]= 0;
+}
+
+- (IBAction)btnPrice2Pressed:(id)sender {
+    _btnPrice1.on = false;
+    caracteristicasdeauto[7]= 1;
 }
 @end
