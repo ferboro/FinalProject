@@ -124,7 +124,7 @@
 		C140DC151D263BAE006CA499 /* tequila.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tequila.png; sourceTree = "<group>"; };
 		C14FB3BC1D7A4D0800E9A652 /* MapDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDisplay.h; sourceTree = "<group>"; };
 		C14FB3BD1D7A4D0800E9A652 /* MapDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDisplay.m; sourceTree = "<group>"; };
-		C14FB3BF1D7A57CD00E9A652 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		C14FB3BF1D7A57CD00E9A652 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C15463461D26E3F200E457F2 /* chiapadecorzo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chiapadecorzo.png; sourceTree = "<group>"; };
 		C15463471D26E3F200E457F2 /* chiapas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chiapas.png; sourceTree = "<group>"; };
 		C15463481D26E3F200E457F2 /* comitandedominguez.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comitandedominguez.png; sourceTree = "<group>"; };
