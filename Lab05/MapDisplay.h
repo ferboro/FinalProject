@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MapDisplay : UIViewController
+@property NSString *destinationTitle;
 
 @end

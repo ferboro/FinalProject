@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MapDisplay.h"
 
 @interface DestinationDetails : UIViewController
 @property NSString *destinationTitle;

@@ -39,6 +39,17 @@
  // Pass the selected object to the new view controller.
  }
  */
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.destinationViewController isKindOfClass:[MapDisplay class]]) {
+        DestinationDetails *destination     = [segue destinationViewController];
+        destination.destinationTitle        = self.destinationTitle;
+        //destination.destinationDescription  = self.stDescriptionSelected;
+        //destination.destinationPhoto        = self.stPhotoSelected;
+        //probando commit
+        
+    }
+}
 
 - (IBAction)BtnViewMapPressed:(id)sender {
     [self performSegueWithIdentifier:@"MapDisplay" sender:self];
