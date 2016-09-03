@@ -43,6 +43,7 @@
 		C140DC191D263BAE006CA499 /* puertovallarta.png in Resources */ = {isa = PBXBuildFile; fileRef = C140DC131D263BAE006CA499 /* puertovallarta.png */; };
 		C140DC1A1D263BAE006CA499 /* tapalpa.png in Resources */ = {isa = PBXBuildFile; fileRef = C140DC141D263BAE006CA499 /* tapalpa.png */; };
 		C140DC1B1D263BAE006CA499 /* tequila.png in Resources */ = {isa = PBXBuildFile; fileRef = C140DC151D263BAE006CA499 /* tequila.png */; };
+		C14FB3BE1D7A4D0800E9A652 /* MapDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = C14FB3BD1D7A4D0800E9A652 /* MapDisplay.m */; };
 		C154634C1D26E3F200E457F2 /* chiapadecorzo.png in Resources */ = {isa = PBXBuildFile; fileRef = C15463461D26E3F200E457F2 /* chiapadecorzo.png */; };
 		C154634D1D26E3F200E457F2 /* chiapas.png in Resources */ = {isa = PBXBuildFile; fileRef = C15463471D26E3F200E457F2 /* chiapas.png */; };
 		C154634E1D26E3F200E457F2 /* comitandedominguez.png in Resources */ = {isa = PBXBuildFile; fileRef = C15463481D26E3F200E457F2 /* comitandedominguez.png */; };
@@ -117,6 +118,8 @@
 		C140DC131D263BAE006CA499 /* puertovallarta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = puertovallarta.png; sourceTree = "<group>"; };
 		C140DC141D263BAE006CA499 /* tapalpa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapalpa.png; sourceTree = "<group>"; };
 		C140DC151D263BAE006CA499 /* tequila.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tequila.png; sourceTree = "<group>"; };
+		C14FB3BC1D7A4D0800E9A652 /* MapDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDisplay.h; sourceTree = "<group>"; };
+		C14FB3BD1D7A4D0800E9A652 /* MapDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDisplay.m; sourceTree = "<group>"; };
 		C15463461D26E3F200E457F2 /* chiapadecorzo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chiapadecorzo.png; sourceTree = "<group>"; };
 		C15463471D26E3F200E457F2 /* chiapas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chiapas.png; sourceTree = "<group>"; };
 		C15463481D26E3F200E457F2 /* comitandedominguez.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comitandedominguez.png; sourceTree = "<group>"; };
@@ -345,6 +348,8 @@
 				C140DC0C1D262DE4006CA499 /* SecondDisplay.m */,
 				C10E96261D71502F00CA9316 /* Intro.h */,
 				C10E96271D71502F00CA9316 /* Intro.m */,
+				C14FB3BC1D7A4D0800E9A652 /* MapDisplay.h */,
+				C14FB3BD1D7A4D0800E9A652 /* MapDisplay.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -490,6 +495,7 @@
 				C140DC0D1D262DE4006CA499 /* SecondDisplay.m in Sources */,
 				C17317E41D24CFE700B0BEA1 /* Lab05.xcdatamodeld in Sources */,
 				C17317D81D24CFE700B0BEA1 /* main.m in Sources */,
+				C14FB3BE1D7A4D0800E9A652 /* MapDisplay.m in Sources */,
 				C10E96281D71502F00CA9316 /* Intro.m in Sources */,
 				C140DC0A1D2608EB006CA499 /* DestinationDetails.m in Sources */,
 			);

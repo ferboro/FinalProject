@@ -40,4 +40,7 @@
  }
  */
 
+- (IBAction)BtnViewMapPressed:(id)sender {
+    [self performSegueWithIdentifier:@"MapDisplay" sender:self];
+}
 @end

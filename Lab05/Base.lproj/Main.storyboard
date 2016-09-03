@@ -262,17 +262,6 @@
                                     <action selector="btnAWDPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="AgY-b5-T2a"/>
                                 </connections>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="pjW-qM-0pK">
-                                <rect key="frame" x="89" y="508" width="143" height="53"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Buscar"/>
-                                <connections>
-                                    <action selector="btnSearchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U3H-9O-Nco"/>
-                                </connections>
-                            </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="nIO-p6-oBr" userLabel="SW_Price2">
                                 <rect key="frame" x="265" y="462" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -308,6 +297,17 @@
                                     <action selector="btnRWDPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="Pje-2H-9gm"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="pjW-qM-0pK">
+                                <rect key="frame" x="89" y="508" width="143" height="53"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Buscar"/>
+                                <connections>
+                                    <action selector="btnSearchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U3H-9O-Nco"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -424,9 +424,21 @@
                                 <rect key="frame" x="20" y="352" width="280" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mES-N7-cM5" userLabel="BtnViewMap">
+                                <rect key="frame" x="82" y="478" width="157" height="47"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
+                                <state key="normal" title="View Location">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnViewMapPressed:" destination="StR-r9-q7A" eventType="touchUpInside" id="rWj-Gg-dhc"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aMX-dj-5wj" userLabel="Lbl Title">
                                 <rect key="frame" x="0.0" y="314" width="320" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -435,18 +447,34 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="DAv-C6-VZm"/>
                     <connections>
                         <outlet property="imgDestination" destination="bFZ-Bb-CS2" id="nlx-m6-ATq"/>
                         <outlet property="lblDescription" destination="zHj-Qk-r5i" id="iYj-rs-bpd"/>
                         <outlet property="lblTitle" destination="aMX-dj-5wj" id="hde-4l-aPX"/>
+                        <segue destination="ftG-ei-UBG" kind="push" identifier="MapDisplay" id="Hua-gq-vPi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Esz-L4-UsP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1186" y="272"/>
+        </scene>
+        <!--Map Display-->
+        <scene sceneID="zaR-Kw-LL2">
+            <objects>
+                <viewController storyboardIdentifier="MapDisplay" id="ftG-ei-UBG" customClass="MapDisplay" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="78c-14-8UN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xjO-MC-HLI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EZh-8G-1fg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1611" y="272"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CAp-n0-9R7">
